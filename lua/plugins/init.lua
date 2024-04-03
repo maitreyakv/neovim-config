@@ -32,4 +32,15 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "python",
+      },
+    },
+  },
 }
