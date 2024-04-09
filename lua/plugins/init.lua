@@ -40,6 +40,7 @@ return {
         "vim",
         "lua",
         "python",
+        "sql",
       },
     },
   },
