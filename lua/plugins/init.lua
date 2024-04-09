@@ -44,4 +44,6 @@ return {
       },
     },
   },
+
+  { "ggandor/leap.nvim" },
 }
