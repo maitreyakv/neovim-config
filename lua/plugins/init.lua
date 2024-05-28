@@ -41,6 +41,7 @@ return {
         "lua",
         "python",
         "sql",
+        "rust",
       },
     },
   },
