@@ -29,3 +29,21 @@ lspconfig.pyright.setup(
     }
   }
 )
+
+lspconfig.rust_analyzer.setup(
+  {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+      ["rust-analyzer"] = {
+        workspace = {
+          symbol = {
+            search = {
+              kind = "all_symbols"
+            }
+          }
+        }
+      },
+    }
+  }
+)

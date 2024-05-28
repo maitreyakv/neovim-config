@@ -3,9 +3,13 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- Lua
         "lua-language-server",
+        -- Python
         "pyright",
         "ruff-lsp",
+        -- Rust
+        "rust-analyzer"
       },
     },
   },
