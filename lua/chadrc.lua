@@ -4,7 +4,7 @@
 -- Run LSP formatting on buffer write
 vim.api.nvim_create_augroup("AutoFormatting", {})
 vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*.py",
+  pattern = { "*.py", "*.rs" },
   group = "AutoFormatting",
   callback = function ()
     vim.lsp.buf.format()
