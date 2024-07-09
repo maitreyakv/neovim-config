@@ -9,7 +9,9 @@ return {
         "pyright",
         "ruff-lsp",
         -- Rust
-        "rust-analyzer"
+        "rust-analyzer",
+        -- Terraform 
+        "terraform-ls",
       },
     },
   },
