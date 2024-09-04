@@ -1,4 +1,4 @@
--- This file  needs to have same structure as nvconfig.lua 
+-- This file  needs to have same structure as nvconfig.lua
 -- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
 
 -- Run LSP formatting on buffer write
@@ -6,7 +6,7 @@ vim.api.nvim_create_augroup("AutoFormatting", {})
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = { "*.py", "*.rs", "*.tf", "*.tfvars" },
   group = "AutoFormatting",
-  callback = function ()
+  callback = function()
     vim.lsp.buf.format()
     vim.lsp.buf.code_action({
       context = { only = { "source.organizeImports", "source.unusedImports" } },
@@ -23,12 +23,12 @@ vim.opt.colorcolumn = "101"
 local M = {}
 
 M.ui = {
-	theme = "catppuccin",
+  theme = "catppuccin",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  -- hl_override = {
+  -- 	Comment = { italic = true },
+  -- 	["@comment"] = { italic = true },
+  -- },
 }
 
 return M
