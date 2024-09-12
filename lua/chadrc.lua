@@ -23,7 +23,7 @@ vim.opt.colorcolumn = "101"
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "catppuccin",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
