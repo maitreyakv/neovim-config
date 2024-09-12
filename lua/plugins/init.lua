@@ -20,7 +20,6 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = { "folke/trouble.nvim" },
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
   },
