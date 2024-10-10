@@ -1,24 +1,6 @@
 return {
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        -- Lua
-        "lua-language-server",
-        -- Python
-        "pyright",
-        "ruff-lsp",
-        -- Rust
-        "rust-analyzer",
-        -- Terraform 
-        "terraform-ls",
-      },
-    },
-  },
-
-  {
     "neovim/nvim-lspconfig",
-    dependencies = { "folke/trouble.nvim" },
     config = function()
       require "configs.lspconfig"
     end,
@@ -36,19 +18,6 @@ return {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "vim",
-        "lua",
-        "python",
-        "sql",
-        "rust",
-      },
-    },
   },
 
   { "ggandor/leap.nvim" },

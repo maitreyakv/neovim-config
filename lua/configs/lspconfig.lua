@@ -8,6 +8,7 @@ local nvlsp = require "nvchad.configs.lspconfig"
 lspconfig.ruff_lsp.setup(
   {
     on_attach = nvlsp.on_attach,
+    on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
   }
 )
@@ -15,6 +16,7 @@ lspconfig.ruff_lsp.setup(
 lspconfig.pyright.setup(
   {
     on_attach = nvlsp.on_attach,
+    on_init = nvlsp.on_init,
     capabilitied = nvlsp.capabilities,
     settings = {
       pyright = {
@@ -33,6 +35,7 @@ lspconfig.pyright.setup(
 
 lspconfig.rust_analyzer.setup(
   {
+    on_init = nvlsp.on_init,
     on_attach = nvlsp.on_attach,
     capabilities = nvlsp.capabilities,
     settings = {
@@ -49,4 +52,10 @@ lspconfig.rust_analyzer.setup(
   }
 )
 
-lspconfig.terraformls.setup{}
+lspconfig.terraformls.setup(
+  {
+    on_init = nvlsp.on_init,
+    on_attach = nvlsp.on_attach,
+    capabilities = nvlsp.capabilities,
+  }
+)
