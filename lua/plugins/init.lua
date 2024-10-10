@@ -20,5 +20,18 @@ return {
     opts = {},
   },
 
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "python",
+        "sql",
+        "rust",
+      },
+    },
+  },
+
   { "ggandor/leap.nvim" },
 }
