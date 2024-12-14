@@ -29,6 +29,7 @@ return {
         "python",
         "sql",
         "rust",
+        "hcl",
       },
     },
   },
